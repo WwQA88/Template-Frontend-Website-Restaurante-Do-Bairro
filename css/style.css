@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/*Configurações Gerais do Site*/
+
+:root {
+    --preto: rgb(0, 0, 0);
+    --branc: rgb(255, 255, 255);
+    --cinza: rgb(235, 235, 235);
+    --verde: rgb(6, 184, 6);
+    --verde2: rgb(82, 219, 82);
+    --corprojeto1: rgb(172, 10, 10);
+    --corprojeto2: rgb(224, 16, 16);
+    --corprojeto3: rgb(151, 42, 42);
+    --corprojeto4: rgb(170, 170,21);
+    --corprojeto5: rgb(247, 247, 7);
+    --corprojeto6: rgb(255, 136, 0);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(var(--corprojeto6),var(--corprojeto1),var(--corprojeto1), var(--corprojeto1));
+    color: var(--branc);   
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3em;
+    word-spacing: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: yellow;
+}
+
+footer {
+    background: linear-gradient(var(--corprojeto1),var(--corprojeto1),var(--corprojeto1), var(--corprojeto6));
+    color: var(--branc);
+    text-align: center;
+    font-weight: bold;    
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+main {
+    background-color: var(--branc);
+    padding: 1%;
+    margin: auto;
+    width: 90%;            
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px var(--preto);
+}
+
+aside {
+    background-color: var(--branc);
+    padding: 1%;
+    margin: auto;
+    width: 90%;            
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px var(--preto);
+}
+
+/*Configurações de Links de Produtos*/
+
+.menu {
+    color: white;
+    background-color: var(--corprojeto1);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--corprojeto6);
+    font-size: 1.3em;
+}
+
+/*Configurações de Títulos Headlines*/
+
+h1 {
+    font-size: 3.5em;
+    margin-top: 1%;
+    text-align: center;
+    color: var(--corprojeto1);
+    font-family: "Kaushan Script", serif;
+    text-shadow: 1px 1px 1px var(--corprojeto6);
+}
+
+h2 {
+    font-size: 2.2em;
+    color: var(--corprojeto1);
+    text-align: center;
+    font-family: "Kaushan Script", serif;
+    text-shadow: 1px 1px 1px var(--corprojeto6);   
+}
+
+/*Configurações de Títulos para Celulares*/
+@media(min-width: 320px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.3em;
+        margin-top: 1%;
+        text-align: center;
+        color: var(--corprojeto1);
+        font-family: "Kaushan Script", serif;
+        text-shadow: 1px 1px 1px var(--corprojeto6);
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        color: var(--corprojeto1);
+        text-align: center;
+        font-family: "Kaushan Script", serif;
+        text-shadow: 1px 1px 1px var(--corprojeto6);   
+    }
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+/*Configurações de Imagens*/
+
+img {
+    width: 100%;
+    padding-top: 1%;
+}
+
+#topo {
+    width: 400px;
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+@media(min-width: 320px) and (max-width: 1024px) {
+    #topo {
+        width: 320px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+}
+
+#rodape {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+@media(min-width: 320px) and (max-width: 1024px) {
+    #rodape {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+}
+
+ /*Configurações de Parágrafos*/
+
+p {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/*Configurações de Parágrafos para dispositivos móveis*/
+
+@media(min-width: 360px) and (max-width: 1024px){
+    p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    }
+}
+strong {
+    color: green
+}
+
+/*Configuração de Separadores com Divs*/
+
+.separador {
+    margin-top: 9.5%;
+}
+
+.separador-conteudo {
+    margin-top: 0.1%;
+}
+
+.separador-conteudo-bebidas {
+    margin-top: 9.5%;
+}
+
+.separador-conteudo-sobremesas {
+    margin-top: 9.5%;
+}
+
+.separador-conteudo-refeicoes {
+    margin-top: 2%;
+}
+
+@media(min-width: 320px) and (max-width: 1024px) {
+
+    .separador-conteudo-bebidas {
+        margin-top: 22%;
+    }
+    
+    .separador-conteudo-sobremesas {
+        margin-top: 22%;
+    }
+
+    .separador-conteudo-refeicoes {
+        margin-top: 5%;
+    }
+
+}
+
+/*Configurações de Divs para dispositivos móveis*/
+
+@media(min-width: 320px) and (max-width: 1024px){
+    .separador {
+    margin-top: 30%;
+    }
+    .separador-conteudo {
+    margin-top: 0.1%;
+    }
+}
+
+/*Configurações da Grade de Conteúdo / Grids*/
+
+#grid-conteudo-reifeicoes {
+    background-color: var(--branc);
+    padding: 0.5%;
+}
+
+#grid-conteudo-bebidas {
+    background-color: var(--branc);
+    padding: 0.5%;
+}
+
+#grid-conteudo-sobremesas {
+    background-color: var(--branc);
+    padding: 0.5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1024px;
+    margin: auto;
+    gap: 8px;
+}
+
+.grid div {
+    background-color: var(--branc);
+    text-align: center;
+    padding: 2px;
+    box-shadow: 1px 1px 1px 2px var(--corprojeto6);
+    border-radius: 20px;
+}
+
+/*Configurações para Botões de Ação*/
+
+button {
+    padding: 8px 20px 8px 20px;
+    background-color: var(--verde);
+    color: var(--branc);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+}
+
+button:hover {
+    background: var(--verde2);
+    color: var(--preto);
+}
+
+/*WhatsApp*/
+
+#whats {
+    width: 100px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin: 6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;    
+    text-shadow: 1px 1px 1px white
+}
+
+@media(min-width: 320px) and (max-width: 1024px) {
+    #whats {
+        width: 90px;
+        height: 40px;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        margin: 6em;
+        margin-right: 8px;        
+    }
+}
